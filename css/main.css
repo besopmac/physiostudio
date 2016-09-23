@@ -1,43 +1,49 @@
 /* Google Fonts import: Roboto 100, 400, 700 */
 @import 'https://fonts.googleapis.com/css?family=Roboto:100,400,700';
 
-/* Default */
-html {
-  height: 100%;
-  box-sizing: border-box;
-}
-
-*, *::after, *::before {
-    box-sizing: inherit;
-}
-
+/*********************
+The Flexbox Structure
+**********************/
 body {
-  color: #222;
-  font-family: 'Roboto', sans-serif;
-}
-
-img {
-  height: auto;
-  max-width: 100%;
-}
-
-/* Flexbox Grid */
-.wrapper {
-    width: 100vw;
-    height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    height: 100%;
+    min-height: 100vh;
 }
-header {
-    display: flex;
-    border: 1px dashed rgba(0,0,0,.4);
+main { flex: 1 auto; }
+
+/*********************/
+.intro { padding: 1.5rem; }
+
+.hero {
+    background: lighten(steelblue, 10%) url(https://source.unsplash.com/E7q00J_8N7A/1600x600/) no-repeat 0 0;
+    background-size: cover;
+    padding: 2.5em 0;
 }
-main {
-    flex: 1;
-    border: 1px dashed rgba(0,0,0,.2);
+.hero-content {
+    background: rgba(5,5,5,0.5);
+    border-radius: 5px;
+    padding: 1.5em;
 }
-footer {
-    display: flex;
-    border: 1px dashed rgba(0,0,0,.6);
+.hero-content h1 {
+    font-size: 2.5rem;
+    color: #eee;
+}
+.hero-content h2 {
+    color: #bbb;
+    font-size: 1.1rem;
+    font-weight: normal;
+    margin-bottom: 1.5em;
+}
+
+.features {
+    padding: 0;
+    color: #eee;
+    list-style: none;
+}
+.features li {
+    padding: 0.5rem;
+    border-radius: 4px;
+    margin: 0 12px 12px 0;
+    display: inline-block;
 }
