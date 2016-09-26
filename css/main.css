@@ -1,5 +1,11 @@
 /* Google Fonts import: Montserrat, Open Sans */
+@import url(http://weloveiconfonts.com/api/?family=zocial);
 @import 'https://fonts.googleapis.com/css?family=Montserrat:700|Open+Sans:300,400,700';
+
+/* zocial */
+[class*="zocial-"]:before {
+  font-family: 'zocial', sans-serif;
+}
 
 * {
     margin: 0;
@@ -27,11 +33,62 @@ header {
     color: #fff;
     background: #43b3b0;
 }
+header > .container-fluid {
+    color: #fff;
+    background-color: #45a2a0;
+}
+.header-social {
+    height: 30px;
+    min-height: 30px;
+}
+.header-social .logo {
+    top: -20px;
+    width: 190px;
+    height: 110px;
+    padding: .5em;
+    position: absolute;
+    display: inline-block;
+    background-color: #fff;
+}
+.social {
+    display: flex;
+    min-height: 30px;
+    align-items: center;
+    justify-content: flex-end;
+}
+.social p,
+.social ul {
+    margin: 0;
+    padding: 0;
+}
+.social p {
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.social ul li {
+    width: 18px;
+    margin-left: 5px;
+    text-align: center;
+    display: inline-block;
+    font-weight: normal !important;
+}
+.social ul li a,
+.social ul li a:link,
+.social ul li a:visited {
+    color: #38cfcb;
+}
 
+.header-social > .menu-principal {
+
+}
 
 /**********************
 The Main
 **********************/
+
+
+
 
 
 
@@ -94,7 +151,8 @@ footer > .container-fluid {
     flex-direction: row;
     align-items: center;
 }
-.dev-copy p {
+.dev-copy p,
+.tab-social p {
     margin: 0;
     font-size: 80%;
     font-weight: bolder;
