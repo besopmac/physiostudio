@@ -1,5 +1,5 @@
 /* Google Fonts import: Montserrat, Open Sans */
-@import url(http://weloveiconfonts.com/api/?family=zocial);
+@import url('http://weloveiconfonts.com/api/?family=zocial');
 @import 'https://fonts.googleapis.com/css?family=Montserrat:700|Open+Sans:300,400,700';
 
 /* zocial */
@@ -50,6 +50,17 @@ header > .container-fluid {
     display: inline-block;
     background-color: #fff;
 }
+.logo:before, .ribbon:after {
+    content: "";
+    position: absolute;
+    display: block;
+    bottom: 0;
+    left: -20px;
+    width: 0; height: 0;
+    border-top: 20px solid rgba(0,0,0,.1);
+    border-left: 20px solid transparent;
+    z-index: -1;
+}
 .social {
     display: flex;
     min-height: 30px;
@@ -66,27 +77,53 @@ header > .container-fluid {
     font-weight: bold;
     text-transform: uppercase;
 }
+.social ul {
+    list-style: none;
+}
 .social ul li {
     width: 18px;
     margin-left: 5px;
     text-align: center;
     display: inline-block;
-    font-weight: normal !important;
 }
 .social ul li a,
 .social ul li a:link,
 .social ul li a:visited {
     color: #38cfcb;
 }
-
-.header-social > .menu-principal {
-
+.menu-principal {
+    display: flex;
+    min-height: 70px;
+    align-items: flex-end;
+    justify-content: flex-end;
 }
+.menu-principal ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.menu-principal li { display: inline-flex; }
+.menu-principal li a {
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.3rem;
+    padding: .75em 1em;
+    font-family: 'Montserrat';
+    text-transform: uppercase;
+}
+.menu-principal li a:hover {
+    color: #38cfcb;
+    text-decoration: none;
+    background-color: #fff;
+    border-radius: .2em .2em 0 0;
+    box-shadow: 0 -2px 1px 0 rgba(69,162,160,.7);
+}
+
 
 /**********************
 The Main
 **********************/
-
+.hero { padding: 2em 0; z-index: -2; }
 
 
 
