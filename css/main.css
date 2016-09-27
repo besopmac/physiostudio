@@ -25,7 +25,6 @@ body {
 main { flex: 1 auto; }
 
 
-
 /**********************
 The Header
 **********************/
@@ -50,7 +49,7 @@ header > .container-fluid {
     display: inline-block;
     background-color: #fff;
 }
-.logo:before, .ribbon:after {
+.logo:before {
     content: "";
     position: absolute;
     display: block;
@@ -94,7 +93,7 @@ header > .container-fluid {
 .menu-principal {
     display: flex;
     min-height: 70px;
-    align-items: flex-end;
+    align-items: center;
     justify-content: flex-end;
 }
 .menu-principal ul {
@@ -106,26 +105,38 @@ header > .container-fluid {
 .menu-principal li a {
     color: #fff;
     font-weight: 700;
-    font-size: 1.3rem;
+    font-size: 1.25rem;
     padding: .75em 1em;
     font-family: 'Montserrat';
     text-transform: uppercase;
 }
 .menu-principal li a:hover {
-    color: #38cfcb;
+    border-radius: .2em;
     text-decoration: none;
-    background-color: #fff;
-    border-radius: .2em .2em 0 0;
-    box-shadow: 0 -2px 1px 0 rgba(69,162,160,.7);
+    background-color: #45A2A0;
+    /*box-shadow: 0 -2px 1px 0 rgba(69,162,160,.7);*/
+}
+
+
+/**********************
+The Hero Slider
+**********************/
+.hero {
+    z-index: -2;
+    padding: 0;
+}
+.slide .item {
+    height: 250px;
+    overflow: hidden;
+}
+.slide .item > img {
+    margin-top: -100px; /* remover */
 }
 
 
 /**********************
 The Main
 **********************/
-.hero { padding: 2em 0; z-index: -2; }
-
-
 
 
 
