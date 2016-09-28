@@ -129,9 +129,6 @@ The Hero Slider
     height: 250px;
     overflow: hidden;
 }
-.slide .item > img {
-    margin-top: -100px; /* remover */
-}
 
 
 /**********************
