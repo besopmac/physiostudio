@@ -127,7 +127,7 @@ The Hero Slider
 }
 .slide .item {
     z-index: -2;
-    height: 250px;
+    height: 300px;
     overflow: hidden;
 }
 
@@ -135,6 +135,9 @@ The Hero Slider
 /**********************
 The Main
 **********************/
+.intro {
+    padding-top: 1.5%;
+}
 .intro .titulo {
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
@@ -143,6 +146,16 @@ The Main
     text-transform: uppercase;
     margin-bottom: .5em;
 }
+
+.box-cursos {
+    height: auto;
+}
+.box-cursos img {
+    width: 100%;
+
+}
+
+
 .box-studio {
     color: #fff;
     box-sizing: content-box;
@@ -166,29 +179,34 @@ The Main
 .box-studio img { min-width: 100%; }
 
 .box-depoimento {
-    margin: 2em auto;
+    margin: 5% auto 1.5%;
 }
-.carousel-dep {
+.box-depoimento .carousel-dep {
     width: 100%;
     height: 175px;
     padding: 0 25%;
 }
-.carousel-content {
+.box-depoimento .carousel-content {
     color: rgba(0,0,0,.6);
     display: flex;
     font-size: 1.1em;
-    margin-top: 6.5%;
+    margin-top: 5%;
     line-height: 1.75;
     align-items: center;
     font-style: italic;
 }
-.carousel-content .assinatura-depoimento {
+.box-depoimento .carousel-content .assinatura-depoimento {
     margin-top: 15px;
     font-style: normal;
 }
-.carousel-content .assinatura-depoimento span {
+.box-depoimento .carousel-content .assinatura-depoimento span {
     color: #45a2a0;
     font-weight: bold;
+}
+
+.carousel-button {
+    width: 60px;
+    height: 100%;
 }
 .carousel-control.left,
 .carousel-control.right {
