@@ -133,6 +133,27 @@ The Hero Slider
 
 
 /**********************
+The Section Title
+**********************/
+.hero-intro {
+    background: url('../img/header-cursos.jpg') center center;
+    background-size: cover;
+    min-height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.hero-intro h1 {
+    color: #fff;
+    font-size: 2.25em;
+    font-weight: bold;
+    letter-spacing: -.05em;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/**********************
 The Main
 **********************/
 .intro {
