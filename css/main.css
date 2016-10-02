@@ -262,18 +262,29 @@ The Main
 The Flexbox Grid
 **********************/
 .button {
+    color: #43b3b0;
     padding: .5rem;
-    color: #696969;
-    border: 1px dotted #ccc;
+    font-size: .9em;
+    font-weight: 700;
+    border-radius: 3px;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid #43b3b0;
     background-color: white;
     text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+}
+.button:hover {
+    color: #45a2a0;
+    text-decoration: none;
+    border: 1px solid #45a2a0;
 }
 .button-block {
     width: 100%;
     display: block;
 }
 .cards {
-    margin: 0;
+    margin: 0 0 1em;
     padding: 0;
     display: flex;
     flex-wrap: wrap;
@@ -300,6 +311,49 @@ The Flexbox Grid
     border-radius: .25rem;
     background-color: white;
     box-shadow: 0 20px 40px -14px rgba(0,0,0,.25);
+}
+.card:hover .card-image {
+    -webkit-filter: contrast(100%);
+            filter: contrast(100%);
+}
+.card-content {
+    padding: 1em;
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+}
+.card-image {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    -webkit-filter: contrast(70%);
+            filter: contrast(70%);
+}
+.card-image::before {
+    content: "";
+    display: block;
+    padding-top: 56.25%;
+}
+@media (min-width: 40rem) {
+    .card-image::before {
+        padding-top: 66.6%;
+    }
+}
+.card-image--flowers   { background-image: url(https://unsplash.it/800/600?image=82); }
+.card-image--river     { background-image: url(https://unsplash.it/800/600?image=11); }
+.card-image--record    { background-image: url(https://unsplash.it/800/600?image=39); }
+.card-image--fence     { background-image: url(https://unsplash.it/800/600?image=59); }
+.card-title {
+    color: #696969;
+    font-size: 2rem;
+    font-weight: 700;
+}
+.card-text {
+    flex: 1 1 auto;
+    font-size: 1em;
+    line-height: 1.5;
+    margin: .5em 0 1.5em;
 }
 
 
