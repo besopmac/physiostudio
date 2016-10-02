@@ -167,7 +167,14 @@ The Main
     text-transform: uppercase;
     margin-bottom: .5em;
 }
-
+.main-content {
+    padding: 3% 0;
+    line-height: 2;
+    font-size: 1.5rem;
+}
+.main-content .conteudo p {
+    margin-bottom: 2em;
+}
 .box-cursos {
     height: auto;
 }
@@ -175,8 +182,6 @@ The Main
     width: 100%;
 
 }
-
-
 .box-studio {
     color: #fff;
     box-sizing: content-box;
