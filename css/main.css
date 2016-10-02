@@ -195,17 +195,14 @@ The Main
     font-weight: 700;
 }
 
-.box-cursos {
-    height: auto;
-}
-.box-cursos img {
-    width: 100%;
-}
+
+/** BOX STUDIO **/
 .box-studio {
     color: #fff;
     box-sizing: content-box;
     background-color: #45a2a0;
 }
+.box-cursos h3,
 .box-studio h3 {
     padding: .75em 1em .5em;
     font-size: 1.5em;
@@ -213,18 +210,42 @@ The Main
     font-family: 'Montserrat';
     text-transform: uppercase;
 }
+.box-cursos p,
 .box-studio p {
     margin: 0;
     padding: 0 1.5em 2em;
     font-size: .9em;
     line-height: 2;
     font-weight: 300;
-
 }
-.box-studio img { min-width: 100%; }
+.box-studio img,
+.slide-cursos .carousel-content img {
+    min-width: 100%;
+}
 
+
+/** BOX CURSO **/
+.box-cursos {
+    display: flex;
+    flex-direction: column;
+}
+.box-cursos h3 {
+    color: #45a2a0;
+    padding: .25em 0 .25em;
+}
+.box-cursos p {
+    padding: 0 0 1.5em;
+    font-weight: 400;
+}
+
+.box-cursos img {
+    min-width: 100%;
+}
+
+
+/** BOX DEPOIMENTO **/
 .box-depoimento {
-    margin: 5% auto 1.5%;
+    margin: 3em auto 1.5em;
 }
 .box-depoimento .carousel-dep {
     width: 100%;
@@ -282,6 +303,9 @@ The Flexbox Grid
 .button-block {
     width: 100%;
     display: block;
+}
+.button-small {
+    display: inline;
 }
 .cards {
     margin: 0 0 1em;
