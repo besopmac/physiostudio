@@ -175,12 +175,31 @@ The Main
 .main-content .conteudo p {
     margin-bottom: 2em;
 }
+.breadcrumb-custom {
+    padding: 0;
+    color: #9E9E9E;
+    font-size: .9em;
+    font-weight: 400;
+    margin-bottom: 3em;
+    text-transform: uppercase;
+    background-color: transparent;
+}
+.breadcrumb-custom a,
+.breadcrumb-custom a:hover,
+.breadcrumb-custom a:visited {
+    color: #9E9E9E;
+    text-decoration: none;
+}
+.breadcrumb-custom span {
+    color: #43b3b0;
+    font-weight: 700;
+}
+
 .box-cursos {
     height: auto;
 }
 .box-cursos img {
     width: 100%;
-
 }
 .box-studio {
     color: #fff;
@@ -237,6 +256,88 @@ The Main
 .carousel-control.left,
 .carousel-control.right {
     background-image: none;
+}
+
+/**********************
+The Flexbox Grid
+**********************/
+.button {
+    padding: .5rem;
+    color: #696969;
+    border: 1px dotted #ccc;
+    background-color: white;
+    text-transform: uppercase;
+}
+.button-block {
+    width: 100%;
+    display: block;
+}
+.cards {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+.cards-item {
+    display: flex;
+    padding: 1rem;
+}
+@media (min-width: 40rem) {
+    .cards-item {
+        width: 50%;
+    }
+}
+@media (min-width: 56rem) {
+    .cards-item {
+        width: 33.3333%;
+    }
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: .25rem;
+    background-color: white;
+    box-shadow: 0 20px 40px -14px rgba(0,0,0,.25);
+}
+
+
+/**********************
+The Footer
+**********************/
+.form-custom {
+    padding: 1.75em;
+    border-radius: 2px;
+    border: 1px solid #f0f0f0;
+}
+.form-custom h3 {
+    margin: 0 0 .75em;
+    font-weight: 700;
+}
+.form-custom p {
+    line-height: 1.5;
+    margin-bottom: 2em;
+}
+.form-custom .observacao {
+    color: #45a2a0;
+    font-size: .7em;
+    font-weight: 700;
+    margin: 1em 0 2em;
+    text-transform: uppercase;
+}
+.form-custom .input-custom {
+    margin-bottom: .5em;
+}
+.form-custom p strong { color: #45a2a0; }
+.form-custom .btn-form {
+    color: #fff;
+    font-size: .85em;
+    font-weight: 700;
+    font-family: 'Montserrat';
+    text-transform: uppercase;
+    background-color: #45a2a0;
+    border: 1px solid #45a2a0;
 }
 
 /**********************
