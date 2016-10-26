@@ -93,13 +93,14 @@ header > .container-fluid {
 }
 .menu-principal {
     display: flex;
+    height: 70px;
     min-height: 70px;
     align-items: center;
     justify-content: flex-end;
 }
 .menu-principal ul {
-    margin: 0;
     padding: 0;
+    margin: 5% 0 0;
     list-style: none;
 }
 .menu-principal li { display: inline-flex; }
@@ -117,7 +118,26 @@ header > .container-fluid {
     background-color: #45A2A0;
     /*box-shadow: 0 -2px 1px 0 rgba(69,162,160,.7);*/
 }
-
+.nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
+    color: #45A2A0;
+    background-color: #FFF;
+    border-radius: .2em .2em 0 0;
+}
+.dropdown-menu {
+    border: 1px solid #fff;
+    background-color: #fff;
+}
+.dropdown-menu li a {
+    color: #45A2A0;
+    font-size: 1.25rem;
+    background-color: none;
+    text-transform: capitalize;
+}
+.dropdown-menu li a:hover {
+    color: #F60;
+    border-radius: 0;
+    background-color: transparent;
+}
 
 /**********************
 The Hero Slider
@@ -159,7 +179,8 @@ The Main
 .intro {
     padding-top: 1.5%;
 }
-.intro .titulo {
+.intro .titulo,
+.modal-title-curso {
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     font-size: 3em;
@@ -364,10 +385,10 @@ The Flexbox Grid
         padding-top: 66.6%;
     }
 }
-.card-image--flowers   { background-image: url(https://unsplash.it/800/600?image=82); }
-.card-image--river     { background-image: url(https://unsplash.it/800/600?image=11); }
-.card-image--record    { background-image: url(https://unsplash.it/800/600?image=39); }
-.card-image--fence     { background-image: url(https://unsplash.it/800/600?image=59); }
+.card-image--flowers   { background-image: url(https://s3.amazonaws.com/s3.pilates.com/img/main/home/Inst_Training_slider.png); }
+.card-image--river     { background-image: url(http://www.spahotelpingodeouro.com.br/site/wp-content/uploads/2014/07/corporal10.jpg); }
+.card-image--record    { background-image: url(https://s-media-cache-ak0.pinimg.com/originals/42/3e/a9/423ea945b24b9c3a98bcf35e9737dd95.jpg); }
+.card-image--fence     { background-image: url(https://saudeeemagrecimento.com.br/wp-content/uploads/2016/07/pilates_emagrece.jpg); }
 .card-title {
     color: #696969;
     font-size: 2rem;
@@ -378,6 +399,25 @@ The Flexbox Grid
     font-size: 1em;
     line-height: 1.5;
     margin: .5em 0 1.5em;
+}
+.modal-header {
+    padding-bottom: 0;
+    border-bottom: 1px solid transparent;
+}
+.modal-footer {
+    padding-top: 0;
+    border-top: 1px solid transparent;
+}
+.modal-title-curso {
+    margin: .25em 0 0;
+    font-size: 2em;
+}
+.modal-content-curso {
+    padding: 1em 0 0;
+}
+.btn-modal-cursos {
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 
