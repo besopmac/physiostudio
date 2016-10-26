@@ -63,7 +63,7 @@
                             <div class="card-content">
                             <div class="card-title">Flex</div>
                             <p class="card-text">This is the shorthand for flex-grow, flex-shrink and flex-basis combined. The second and third parameters (flex-shrink and flex-basis) are optional. Default is 0 1 auto. </p>
-                            <a href="cursos-interno.html" class="button button-block">veja mais</a>
+                            <a href="#" class="button button-block" data-toggle="modal" data-target="#myModal">veja mais</a>
                         </div>
                     </div>
                 </li>
@@ -73,7 +73,7 @@
                             <div class="card-content">
                             <div class="card-title">Flex Grow</div>
                             <p class="card-text">This defines the ability for a flex item to grow if necessary. It accepts a unitless value that serves as a proportion. It dictates what amount of the available space inside the flex container the item should take up.</p>
-                            <a href="cursos-interno.html" class="button button-block">veja mais</a>
+                            <a href="#" class="button button-block" data-toggle="modal" data-target="#myModal">veja mais</a>
                         </div>
                     </div>
                 </li>
@@ -83,7 +83,7 @@
                             <div class="card-content">
                             <div class="card-title">Flex Shrink</div>
                             <p class="card-text">This defines the ability for a flex item to shrink if necessary. Negative numbers are invalid.</p>
-                            <a href="cursos-interno.html" class="button button-block">veja mais</a>
+                            <a href="#" class="button button-block" data-toggle="modal" data-target="#myModal">veja mais</a>
                         </div>
                     </div>
                 </li>
@@ -93,7 +93,7 @@
                             <div class="card-content">
                             <div class="card-title">Flex Basis</div>
                             <p class="card-text">This defines the default size of an element before the remaining space is distributed. It can be a length (e.g. 20%, 5rem, etc.) or a keyword. The auto keyword means "look at my width or height property."</p>
-                            <a href="cursos-interno.html" class="button button-block">veja mais</a>
+                            <a href="#" class="button button-block" data-toggle="modal" data-target="#myModal">veja mais</a>
                         </div>
                     </div>
                 </li>
@@ -119,12 +119,27 @@
         </div>
     </footer>
 
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title modal-title-curso" id="myModalLabel">Título do Curso</h4>
+                </div>
+                <div class="modal-body">
+                    <img src="https://s-media-cache-ak0.pinimg.com/originals/42/3e/a9/423ea945b24b9c3a98bcf35e9737dd95.jpg" class="img-responsive" alt="Imagem do Curso" />
+                    <p class="modal-content-curso"><strong>Título do Curso</strong> - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                </div>
+                <div class="modal-footer">
+                    <a href="cursos-interno.html" class="btn btn-lg btn-warning btn-modal-cursos pull-left">Ver curso completo</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/bootstrap.js"></script>
-    <script>
-        $('.carousel').carousel({
-            interval: 5000
-        })
-    </script>
+
 </body>
 </html>
